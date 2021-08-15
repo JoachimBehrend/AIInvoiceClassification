@@ -1,0 +1,58 @@
+{
+    "path_input_data_norm": 
+    {
+      "path"  : "../RH_2016.xlsx",
+      "data_sheet" : "Regnskab 2016",
+      "description_column"   : ["Bilagstekst","PSP-element navn"],
+      "application_list_sheet": "sheet_applications",
+      "application_col_input": "input",
+      "application_col_output": "output"
+    }
+    ,
+    "path_input_data_trans": 
+    {
+      "path"  : "../invoice-normalization/output/output_from_normalization.xlsx",
+      "sheet" : "sheet_data",
+      "description_column"   : "description_processed",
+      "normalization_state_column"  : "normalization_state"
+    }
+    ,
+    "path_input_data_alg": 
+    {
+      "path"  : "../invoice-translation/output/output_from_translation_v2.xlsx",
+      "data_sheet" : "sheet_data",
+      "description_column": "description_processed",
+      "classification_column": "Y-label"
+    }
+    ,
+    "path_input_data_alg_test": 
+    {
+      "path"  : "../invoice-translation/output/output_from_translation_v3.xlsx",
+      "data_sheet" : "sheet_data",
+      "description_column": "description_translated"
+    },
+    "algorithm_bool": {
+      "train_dataset1_eval_dataset2":   false,
+      "train_dataset1_eval_dataset1":   true,
+      "pretrained_model_eval_dataset2": false,
+      "train_dataset1_save_model":      false
+    },
+    "model_paths": {
+      "model_load_path":"./invoice_model/model1",
+      "model_save_path":"./invoice_model/model1"
+    }
+    ,
+    "language_check": {
+      "expected_language": "en_US",
+      "include_other_language": false,
+      "possible_other_language": "da_DK"
+    }, 
+    "Boolean_variables": {
+      "should_replace_keywords": true,
+      "should_check_language": true 
+    },
+      "path_logger": {
+        "app": ".",
+        "logger": "./logger/logger.yaml"
+      }
+  }
