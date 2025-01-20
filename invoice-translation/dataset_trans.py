@@ -1,7 +1,7 @@
 
 import dataset
 import ticket_trans
-
+ 
 class Dataset_norm(dataset.Dataset): 
     def __init__(self,wb,column_names):
         super().__init__(wb,column_names)
