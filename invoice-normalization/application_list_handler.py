@@ -1,6 +1,6 @@
 import pandas 
 import re
-
+ 
 class Application_list_handler(object):
     def __init__(self,wb,input_col,output_col):
         self.application_list = []
