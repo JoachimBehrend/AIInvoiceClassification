@@ -2,7 +2,7 @@ import sys
 sys.path.append('../inheritance/')
 from dataset import *
 import ticket_norm
-
+ 
 class Dataset_norm(Dataset): 
     def __init__(self,wb,column_names):
         super().__init__(wb,column_names)
