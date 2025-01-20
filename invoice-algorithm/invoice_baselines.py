@@ -12,7 +12,7 @@ import output_data_alg
 #from nltk.corpus import stopwords 
 #from nltk.stem.porter import PorterStemmer
 #from autocorrect import spell
-
+ 
 #import output_data_alg
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
