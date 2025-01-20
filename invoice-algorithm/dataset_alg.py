@@ -3,7 +3,7 @@ sys.path.append('..')
 from dataset import *
 import ticket_alg
 import re
-
+ 
 class Dataset_alg(Dataset): 
     def __init__(self,wb,column_names):
         super().__init__(wb,column_names)
