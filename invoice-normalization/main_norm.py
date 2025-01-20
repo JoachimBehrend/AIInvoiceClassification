@@ -7,7 +7,7 @@ import ticket_norm
 import application_list_handler
 import config_setup
 
-
+ 
 class main_norm(object):
     def __init__(self):
         cfg = config_setup.Config("../config.json")
