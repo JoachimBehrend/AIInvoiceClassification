@@ -2,6 +2,7 @@ import os
 import xlsxwriter as xw
 import logger_setup
 
+
 class Output_data:
     def __init__(self, path, name):
         self.output_path = path
