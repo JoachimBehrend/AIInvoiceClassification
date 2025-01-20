@@ -38,3 +38,4 @@ def setup_logging(default_path=cfg.path_logger['logger'], root_path=cfg.path_log
     else:
         logging.basicConfig(level=default_level)
         print('Failed to load configuration file. Using default configs')
+
