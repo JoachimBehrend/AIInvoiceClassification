@@ -1,7 +1,7 @@
 import re 
 import application_list_handler
 import enchant
-
+ 
 import logging
 logger = logging.getLogger(__name__)
 
