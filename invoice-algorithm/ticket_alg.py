@@ -3,7 +3,7 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
-
+ 
 class Ticket(object):
     def __init__(self,index,description):
         self.index = index
